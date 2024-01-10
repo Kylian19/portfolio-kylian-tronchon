@@ -43,6 +43,44 @@ Ce projet a été construit en utilisant les technologies et outils suivants :
 - **EmailJS** : Pour l'intégration du service d'envoi d'emails.
 - **Autres Outils** : Git pour le versionnement, npm pour la gestion des dépendances.
 
+## Dockerization
+
+Ce projet est dockerisé. Pour lancer le projet sur un conteneur Docker, suivez ces étapes :
+
+1. Construisez l'image Docker :
+
+   ```bash
+   docker build -t ktronchon/portfolio .
+
+2. Exécutez l'image Docker :
+
+   ```bash
+   docker run -p 3000:80 ktronchon/portfolio
+
+Le site sera alors accessible à l'adresse localhost:3000.
+
+## Déploiement
+
+Ce projet est déployé sur GitHub Pages. Pour déployer ce projet sur GitHub Pages, suivez ces étapes :
+
+1. Créez une branche gh-pages :
+
+   ```bash
+   git branch gh-pages
+
+2. Poussez la branche gh-pages vers GitHub :
+
+   ```bash
+   git push origin gh-pages
+
+3. Activez les pages GitHub dans les paramètres du dépôt :
+
+   ```bash
+   Settings > Pages > Source > Branch : gh-pages
+
+Le site sera alors accessible à l'adresse https://kylian19.github.io/portfolio-kylian-tronchon/.
+
+
 ## Contributions
 
 Si vous souhaitez contribuer à ce projet, vos idées et contributions sont les bienvenues. Voici comment procéder :
