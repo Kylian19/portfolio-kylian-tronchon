@@ -5,28 +5,43 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "PREVOL : Planning des Vols Dassault",
+    img: "public/prevol_dalle_tactile.webp",
+    desc: "Création d'une application Angular et Java pour la gestion des plannings de vols chez Dassault. Intégration de DevExtreme, une planification précise des vols et des pilotes, gestion via Jira.",
+    boutonContent: "Voir le Projet Dassault",
+    boutonLink: "https://www.apside.com/fr/projets/prevol-la-modelisation-de-plans-de-vol-dassault-aviation/"
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Innovation en Santé : Boîte Mail Médicale Mipih",
+    img: "public/mipih.png",
+    desc: "Développement d'une application mobile innovante pour la gestion des mails médicaux avec Mipih. Utilisation de la technologie Ionic pour une expérience utilisateur optimale, gestion de projet efficace via Redmine.",
+    boutonContent: "Découvrir Mipih",
+    boutonLink: "https://www.mipih.fr/"
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Gestion Complète des Collaborateurs du Groupe ADF",
+    img: "public/groupe_adf.png",
+    desc: "Création d'une solution complète pour la gestion des collaborateurs, couvrant le référencement, l'accès aux informations personnelles, et la gestion des contrats et avenants au sein du Groupe ADF.",
+    boutonContent: "Découvrir Groupe ADF",
+    boutonLink: "https://www.groupeadf.com/fr"
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Gestion CV Innovante : CV Maker Apside",
+    img: "public/apside.png",
+    desc: "Développement et migration d'une application de gestion de CV pour ESN. Transition d'Angular vers React et mise à jour de Java (Spring Boot), avec une gestion efficace des données via SQL.",
+    boutonContent: "Découvrir Apside",
+    boutonLink: "https://www.apside.com/fr/"
   },
+  {
+    id: 5,
+    title: "Me Contacter pour découvir plus de projets",
+    img: "public/banner-linkedin-kylian-tronchon.png",
+    boutonContent: "En savoir plus via Linkedin",
+    boutonLink: "https://www.linkedin.com/in/kylian-tronchon-16b1761b7/"
+  }
 ];
 
 const Single = ({ item }) => {
@@ -43,12 +58,12 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+            <img style={{maxWidth: '100%', maxHeight: '100%', objectFit: 'contain'}}  src={item.img} alt="" />
           </div>
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            <button>See Demo</button>
+            <a href={item.boutonLink} rel="noreferrer" target="_blank"><button>{item.boutonContent}</button></a>
           </motion.div>
         </div>
       </div>
@@ -72,7 +87,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Projets Clés</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

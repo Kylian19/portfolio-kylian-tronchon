@@ -31,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_jcepkcb",
+        "template_l3hs2gd",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "i1-yP4PdPDGSx1FM5"
       )
       .then(
         (result) => {
@@ -55,18 +55,18 @@ const Contact = () => {
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let’s work together</motion.h1>
+        <motion.h1 variants={variants}>Travaillons ensemble</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <h2>Email</h2>
+          <span>kylian@tronchonkylian.tech</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Address</h2>
-          <span>Hello street New York</span>
+          <h2>Ville de résidence</h2>
+          <span>Salon-de-Provence</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
-          <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <h2>Téléphone</h2>
+          <span>06 88 77 38 15</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -106,12 +106,10 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
+          <input type="text" required placeholder="Nom" name="name"/>
           <input type="email" required placeholder="Email" name="email"/>
           <textarea rows={8} placeholder="Message" name="message"/>
-          <button>Submit</button>
-          {error && "Error"}
-          {success && "Success"}
+          <button>Envoyer</button>
         </motion.form>
       </div>
     </motion.div>

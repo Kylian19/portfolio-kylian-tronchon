@@ -36,8 +36,8 @@ const Services = () => {
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
-          I focus on helping your brand grow
-          <br /> and move forward
+          Je vous accompagnes
+          <br /> pour la réussite de vos projets.
         </p>
         <hr />
       </motion.div>
@@ -45,14 +45,14 @@ const Services = () => {
         <div className="title">
           <img src="/people.webp" alt="" />
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+            <motion.b whileHover={{color:"orange"}}>Développement</motion.b> Full-Stack :
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>For Your</motion.b> Business.
+            <motion.b whileHover={{color:"orange"}}>Solutions</motion.b> Web Innovantes.
           </h1>
-          <button>WHAT WE DO?</button>
+          <a href="#Portfolio"><button>MES PROJETS</button></a>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -60,53 +60,48 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Développement Front-End</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          Spécialisé en Angular et React, je crée des interfaces web réactives et conviviales, 
+          optimisant l'expérience utilisateur sur divers appareils. 
+          Mes compétences en front-end garantissent des sites web visuellement attrayants et fonctionnels.
           </p>
-          <button>Go</button>
+          <a href="#Contact"><button>Discutons Front-End</button></a>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Développement Back-End</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          Avec une expertise approfondie en Java, SpringBoot, .Net, et Python, 
+          je développe des architectures back-end fiables et sécurisées. 
+          J'assure la scalabilité et la performance pour des applications web robustes et efficaces.
           </p>
-          <button>Go</button>
+          <a href="#Contact"><button>Parlons Back-End</button></a>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Solutions Full-Stack Intégrées</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          Je combine front-end et back-end pour offrir des solutions full-stack complètes. 
+          De la conception à la mise en production, je m'engage à fournir des applications web intégrées, 
+          performantes et adaptées aux besoins spécifiques.
           </p>
-          <button>Go</button>
+          <a href="#Contact"><button>Développons une solution</button></a>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Utilisation Méthode Agile</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          Fort de mon expérience en équipes multidisciplinaires, je gère des projets informatiques avec agilité et efficacité. 
+          Ma capacité à diriger et à collaborer est cruciale pour transformer les idées en solutions web innovantes.
           </p>
-          <button>Go</button>
+          <a href="#Contact"><button>Planifions Votre Projet</button></a>
         </motion.div>
       </motion.div>
     </motion.div>
