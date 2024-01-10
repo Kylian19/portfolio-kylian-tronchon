@@ -30,7 +30,7 @@ Pour installer et exécuter ce projet localement, suivez ces étapes :
     ```bash
     npm start
 
-    Le site sera alors accessible à l'adresse localhost:3000.
+Le site sera alors accessible à l'adresse localhost:3000.
 
 ## Technologies Utilisées
 
@@ -53,14 +53,10 @@ Si vous souhaitez contribuer à ce projet, vos idées et contributions sont les 
 4. **Poussez vers la Branche** : `git push origin feature/VotreSuperFeature`.
 5. **Ouvrez une Pull Request** : Allez sur le dépôt forké et ouvrez une pull request pour discuter des modifications.
 
-## Licence
-
-Ce projet est sous licence MIT. Pour plus d'informations, veuillez consulter le fichier `LICENSE` inclus dans ce dépôt.
-
 ## Contact
 
 **Kylian Tronchon**  
-Email : [email](tronchonkylian@gmail.com)  
+Email : [tronchonkylian@gmail.com]  
 LinkedIn : [Kylian Tronchon](https://www.linkedin.com/in/kylian-tronchon-16b1761b7/)  
 GitHub : [Kylian19](https://github.com/Kylian19)  
 Lien du projet : [Portfolio Kylian Tronchon](https://github.com/Kylian19/portfolio-kylian-tronchon/tree/main)
